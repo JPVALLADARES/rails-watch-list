@@ -1,0 +1,10 @@
+<div class="container">
+  <ul>
+    <li><h2><%= @list.name%></h2></li>
+    <% @list.bookmarks.each do |bookmark|%>
+    <li><%= bookmark.movie.title %></li>
+    <% end %>
+  </ul>
+  <%= link_to 'Back to lists', lists_path %>
+  <%= link_to 'Back to Lists', lists_path %>
+</div>

@@ -1,0 +1,8 @@
+<div class="container">
+  <ul>
+    <% @lists.each do |list| %>
+      <li><%= list.name %></li>
+    <% end %>
+  </ul>
+  <%= link_to 'Back to Lists', lists_path %>
+</div>
